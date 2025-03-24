@@ -1,55 +1,161 @@
 body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: black;
-    margin: 0px;
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} 
+    padding: 0px;
+    margin:0px;
+    color:white;
+}
 
 main {
-    display: grid;
-    grid-template: 1fr / 25% 55% 20%;
-    height: 100vh;
-}
-
-#xicon {
-    scale: 1.4;
-    margin-left: 60px;
-    margin-bottom: 55px;
-}
-
-.menu {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: 70px;
-}
-
-.menu .menu-items{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    width:fit-content;
-    padding: 15px 20px;
-    border-radius:100px;
+    width: 100%;
 }
 
-.menu .menu-items:hover{
+#left-panel{
+    width: 30%;
+    height:100vh;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top:10px;
+    padding-right: 50px;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+}
+.menu-bar i{
+    margin-right: 20px;
+}
+
+.menu-bar .xlogo {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+.menu-blocks {
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.menu-blocks:hover {
+    background-color: rgba(255, 255, 255, 0.089);
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.133);
 }
 
-.menu .menu-titles {
-    font-size: 28px;
+.post {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight:bold;
+    width: 220px; 
+    margin-top: 15px;
 }
 
-.menu .menu-icons i{
-    vertical-align: text-bottom;
+.post:hover{
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.profile {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 30px;
+    font-size: 16px;
+    padding: 15px;
+    width: 250px;
+}
+
+.profile img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.profile i{
+    margin-left: auto;
+    align-self: center;
+    margin-right:0px;
+}
+
+.profile .menu-profile-tag{
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.473);
+}
+
+#center-area {
+    width: 40%;
+    height:100vh;
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+    overflow: auto;
+}
+
+.feed-selection {
+    display: flex;
+    border-bottom: solid 1px gray;
+    position: relative;
+    gap: 10px;
+}
+
+.feed-selection div {
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 35px;
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.feed-selection div:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.055);
+}
+
+.feed-selection .selected {
+    font-weight: bold;
+    color: white;
+}
+
+.feed-selection .selected::after {
+    content: "";
+    position: absolute;
+    left: 52%;
+    bottom: 0px;
+    width: 20%;
+    height: 4px; /* Thickness of the bar */
+    background-color: #2196F3; /* Bar color */
+    border-radius: 10px; /* Rounded edges */
+    transform: translateX(-50%);
+}
+
+.post-area form {
+    background-color: black;
+}
+.post-area form input{
+    background-color: black;
+}
+
+.post-area .pfp-post {
+    display: flex;
+}
+
+.post-area .pfp-post img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 }
 
 
-
-.feed {
-    border-left: 2px solid rgba(255, 255, 255, 0.455);
-    border-right: 2px solid rgba(255, 255, 255, 0.455);
+#right-sidebar{
+    width: 30%;
+    height:100vh;
+    flex-shrink: 1;
 }
+
