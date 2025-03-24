@@ -19,7 +19,7 @@ main {
     display: flex;
     flex-direction: row-reverse;
     padding-top:10px;
-    padding-right: 50px;
+    padding-right: 0px;
 }
 
 .menu-bar {
@@ -46,6 +46,7 @@ main {
 .menu-blocks:hover {
     background-color: rgba(255, 255, 255, 0.089);
     cursor: pointer;
+    width:fit-content;
 }
 
 .post {
@@ -59,6 +60,7 @@ main {
 
 .post:hover{
     background-color: rgba(255, 255, 255, 0.808);
+    width: 220px; 
 }
 
 .profile {
@@ -67,6 +69,10 @@ main {
     margin-bottom: 30px;
     font-size: 16px;
     padding: 15px;
+    width: 250px;
+}
+
+.profile:hover {
     width: 250px;
 }
 
@@ -111,6 +117,7 @@ main {
     position: relative;
     flex: 1;
     text-align: center;
+    color: rgba(255, 255, 255, 0.507);
 }
 
 .feed-selection div:hover{
@@ -135,6 +142,11 @@ main {
     transform: translateX(-50%);
 }
 
+.post-area {
+    padding-bottom: 14px;
+    border-bottom: solid 1px gray;
+}
+
 .post-area form {
     background-color: black;
 }
@@ -147,15 +159,95 @@ main {
 }
 
 .post-area .pfp-post img {
-    height: 40px;
-    width: 40px;
+    height: 44px;
+    width: 44px;
     border-radius: 50%;
+    margin: 14px;
 }
 
+.post-buttons {
+    align-self: flex-end;
+    display: flex;
+    color: #1d9bf0;
+    margin-left: 62px;
+    padding-right: 20px;
+}
+
+.post-buttons i {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    transform: scale(1.2);
+    height: fit-content;
+}
+
+.post-buttons i:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.pfp-post input[type=text] {
+    position: relative;
+    background-color: black;
+    color: gray;
+    border: none; 
+    font-size: 22px;
+    left: -4px;
+}
+
+.pfp-post input[type=text]:focus {
+    border: none;
+    outline: none;
+}
+
+.post-area .center-post-button {
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 50px;
+    font-weight: bold;
+    margin-left: auto;
+    justify-content: flex-end;
+    width: 8%;
+}
 
 #right-sidebar{
     width: 30%;
     height:100vh;
     flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.247);
+    border-radius: 50px;
+    margin-left: 30px;
+    height: fit-content;
+    padding: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    color: gray;
+    width: 55%;
+}
+
+.search-bar input[type=text] {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.search-bar input[type=text]:focus {
+    border: none;
+    outline: none;
+}
+
+
 
