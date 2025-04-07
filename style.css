@@ -143,7 +143,7 @@ main {
 }
 
 .post-area {
-    padding-bottom: 14px;
+    padding-bottom: 12px;
     border-bottom: solid 1px gray;
 }
 
@@ -248,6 +248,95 @@ main {
     border: none;
     outline: none;
 }
+
+.search-bar:focus-within {
+    border-color: #1da1f2; /* Blue border */
+}
+
+.subscribe-premium-promo {
+    width: 55%;
+    border: 1px solid rgba(255, 255, 255, 0.247);
+    border-radius: 20px;
+    height: fit-content;
+    padding: 14px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.subscribe-premium-promo h3{
+    margin: 0px;
+}  
+
+.subscribe-premium-promo p {
+    font-size: 14px;
+}
+
+#premiumbtn {
+    background-color: rgb(29, 155, 240);
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.trending-column {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    border: 1px solid rgba(255, 255, 255, 0.247);
+    border-radius: 20px;
+    height: fit-content;
+    padding: 14px;
+    margin-left: 30px;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.trending-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+}
+
+.trending-block:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.021);
+}
+
+.trending-block i{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.trending-block i:hover {
+    color: rgb(29, 155, 240);
+    background-color: rgba(29, 156, 240, 0.164);
+}
+
+.trending-column h3 {
+    margin: 0px;
+}
+
+.trending-block-category, .trending-block-postcount {
+    font-size: 14px;
+    color: grey;
+}
+
+.trending-block-title {
+    font-size: 18px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
 
 
 
