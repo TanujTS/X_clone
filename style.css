@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: black;
@@ -9,12 +15,19 @@ body {
 main {
     display: flex;
     flex-direction: row;
+    height: 100vh;
     width: 100%;
+    overflow: hidden;
+}
+
+.cont {
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 #left-panel{
     width: 30%;
-    height:100vh;
+    height:100%;
     flex-shrink: 1;
     display: flex;
     flex-direction: row-reverse;
@@ -56,6 +69,7 @@ main {
     font-weight:bold;
     width: 220px; 
     margin-top: 15px;
+    /* padding: 15px; */
 }
 
 .post:hover{
@@ -97,7 +111,7 @@ main {
 
 #center-area {
     width: 40%;
-    height:100vh;
+    /* height:100vh; */
     border-left: solid 1px gray;
     border-right: solid 1px gray;
     overflow: auto;
@@ -194,7 +208,7 @@ main {
     left: -4px;
 }
 
-.pfp-post input[type=text]:focus {
+.pfp input[type=text]:focus {
     border: none;
     outline: none;
 }
@@ -209,12 +223,13 @@ main {
     font-weight: bold;
     margin-left: auto;
     justify-content: flex-end;
-    width: 8%;
+    width: 10%;
+    padding: 10px 15px;
 }
 
 #right-sidebar{
     width: 30%;
-    height:100vh;
+    /* height:100vh; */
     flex-shrink: 1;
     display: flex;
     flex-direction: column;
@@ -282,6 +297,7 @@ main {
     padding-right: 12px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-top: 10px;
 }
 
 .trending-column {
@@ -336,7 +352,6 @@ main {
     margin-top: 3px;
     margin-bottom: 3px;
 }
-
 
 
 
